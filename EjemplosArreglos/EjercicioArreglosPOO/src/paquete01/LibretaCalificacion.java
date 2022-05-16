@@ -84,11 +84,13 @@ public class LibretaCalificacion {
     public String toString() {
         String cadena = "Libreta de Calificaciones\n";
         cadena = String.format("%sNombre: %s\nCalificaciones:\n", cadena,
-                obtenerEstudiante());
+                obtenerEstudiante().toUpperCase());
+        
         for (int i = 0; i < obtenerCalificaciones().length; i++) {
             cadena = String.format("%s\t\t%.2f\n", cadena,
                     obtenerCalificaciones()[i]);
         }
+        
         cadena = String.format("%sPromedio calificaciones: %.2f\n"
                 + "Promedio cuantitativo: %s\n",
                 cadena, obtenerPromedio(), obtenerPromedioCualitativo());

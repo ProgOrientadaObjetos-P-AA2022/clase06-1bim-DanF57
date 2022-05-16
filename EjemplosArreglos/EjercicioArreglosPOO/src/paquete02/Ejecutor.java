@@ -42,6 +42,6 @@ public class Ejecutor {
         // promedio y promedio cualitativo
         libreta.establecerPromedio();
         libreta.establecerPromedioCualitativo();
-        System.out.printf("\n%s\n", libreta);
+        System.out.printf("%n%s%n", libreta);
     }
 }

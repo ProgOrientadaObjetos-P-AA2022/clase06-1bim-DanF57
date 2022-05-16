@@ -34,23 +34,15 @@ public class Ejecutor {
             // con los datos ingresados se crea el objeto de tipo Vendedor
             Vendedor v = new Vendedor(nombre, edad, sMinino, autos);
             v.calcularPagoMensual();
-            System.out.printf("Datos de Vendedor\n"
-                    + "Nombre: %s\n"
-                    + "Edad: %s\n"
-                    + "Salario mínimo: %.2f\n"
-                    + "Número de autos: %d\n"
-                    + "Pago mensual: %.2f\n", v.obtenerNombres(), v.obtenerEdad(),
-                    v.obtenerSalarioMinimo(), v.obtenerNumeroAutos(),
-                    v.obtenerPagoMensual());
+            System.out.printf("%s", v);
 
             entrada.nextLine(); // limpieza del buffer
-            System.out.println("Desea ingresar más vendedores. Ingrese n para"
+            System.out.println("Desea ingresar más vendedores. Ingrese n para "
                     + "salir");
             opcion = entrada.nextLine();
             if (opcion.equals("n")) {
                 bandera = false;
             }
-
         }
     }
 }

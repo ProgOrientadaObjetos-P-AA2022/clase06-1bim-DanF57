@@ -50,18 +50,8 @@ public class Ejecutor {
             Hospital hosp1 = new Hospital(nombreHospital, numeroDeCamas, 
                     numeroDeDoctores,
                     presupuestoAnio);
-
-            System.out.printf("Datos Hospital\n"
-                    + "Nombre del hospital: %s\n"
-                    + "Ciudad del hospital: %s\n"
-                    + "Número de camas: %d\n"
-                    + "Número de doctores: %d\n"
-                    + "Presupuesto anual: %.2f\n",
-                    hosp1.obtenerNombreHospital(),
-                    hosp1.obtenerCiudadHospital(),
-                    hosp1.obtenerNumeroCamas(),
-                    hosp1.obtenerNumeroDoctores(),
-                    hosp1.obtenerPresupuestoAnual());
+                   System.out.printf("%s", hosp1);
+            
         } else {
             if (opcion == 2) {
                 // Ingreso de datos para el tipo seleccionado
@@ -76,17 +66,7 @@ public class Ejecutor {
                 Hospital hosp2 = new Hospital(nombreHospital, numeroDeCamas, 
                         numeroDeDoctores);
 
-                System.out.printf("Datos Hospital\n"
-                        + "Nombre del hospital: %s\n"
-                        + "Ciudad del hospital: %s\n"
-                        + "Número de camas: %d\n"
-                        + "Número de doctores: %d\n"
-                        + "Presupuesto anual: %.2f\n",
-                        hosp2.obtenerNombreHospital(),
-                        hosp2.obtenerCiudadHospital(),
-                        hosp2.obtenerNumeroCamas(),
-                        hosp2.obtenerNumeroDoctores(),
-                        hosp2.obtenerPresupuestoAnual());
+                System.out.printf("%s", hosp2);
             } else {
                 if (opcion == 3) {
                     // Ingreso de datos para el tipo seleccionado
@@ -107,23 +87,12 @@ public class Ejecutor {
                             numeroDeDoctores,
                             presupuestoAnio);
 
-                    System.out.printf("Datos Hospital\n"
-                            + "Nombre del hospital: %s\n"
-                            + "Ciudad del hospital: %s\n"
-                            + "Número de camas: %d\n"
-                            + "Número de doctores: %d\n"
-                            + "Presupuesto anual: %.2f\n",
-                            hosp3.obtenerNombreHospital(),
-                            hosp3.obtenerCiudadHospital(),
-                            hosp3.obtenerNumeroCamas(),
-                            hosp3.obtenerNumeroDoctores(),
-                            hosp3.obtenerPresupuestoAnual());
+                    System.out.printf("%s", hosp3);
                 } else {
                     System.out.println("Opción fuera de rango");
                 }
             }
         }
-
     }
 
 }

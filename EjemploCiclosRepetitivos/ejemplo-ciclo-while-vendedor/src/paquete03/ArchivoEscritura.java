@@ -32,7 +32,7 @@ public class ArchivoEscritura {
     // agrega registros al archivo
     public void agregarRegistros() {
         try {
-            
+                                                //Ruta
             String rutaArchivo = String.format("data/%s.txt", 
                     obtenerNombreArchivo());
             salidaArchivo = new Formatter(rutaArchivo);

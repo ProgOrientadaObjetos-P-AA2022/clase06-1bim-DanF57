@@ -7,9 +7,10 @@ package paquete03;
 
 import paquete01.Calificacion;
 
-public class Ejemplo {
+public class Ejemplo04 {
     public static void main(String[] args) {
         // crear un arreglo de objetos de tipo Calificacion
+        // Ejemplo copia con promedio
         Calificacion [] calificaciones = new Calificacion[3];
         
         Calificacion c = new Calificacion(10, "Computación");
@@ -20,12 +21,20 @@ public class Ejemplo {
         calificaciones[1] = c2;
         calificaciones[2] = c3;
         
+        // Promedio
+        double suma = 0;
+        
         for (int i = 0; i < calificaciones.length; i++) {
             Calificacion objetoCalificacion = calificaciones[i];
-            System.out.printf("%s - %.2f\n", 
-                    objetoCalificacion.obtenerNombreMateria(),
-                    objetoCalificacion.obtenerNota());
+            suma = suma + objetoCalificacion.obtenerNota(); //Se llama al metodo de las notas
         }
+        double promedio = suma / calificaciones.length;
+        System.out.printf("Promedio: %.2f\n",promedio);
         
+        // Presentar Materias
+        for (int i = 0; i < calificaciones.length; i++) {
+            Calificacion objetoCalificacion = calificaciones[i];
+            System.out.printf("%s\n", objetoCalificacion.obtenerNombreMateria());
+        }
     }
 }
